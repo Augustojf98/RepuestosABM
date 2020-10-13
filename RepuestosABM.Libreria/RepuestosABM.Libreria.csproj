@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E881A70A-005E-42BD-9D92-2F6575FDD658}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>RepuestosABM.Consola</RootNamespace>
-    <AssemblyName>RepuestosABM.Consola</AssemblyName>
+    <ProjectGuid>{E6809ABA-BA3C-46A7-A459-05EB29F0023F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RepuestosABM.Libreria</RootNamespace>
+    <AssemblyName>RepuestosABM.Libreria</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,18 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsolaHelper.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Clases\Abstractas\Categoria.cs" />
+    <Compile Include="Clases\Chapa.cs" />
+    <Compile Include="Clases\Motor.cs" />
+    <Compile Include="Clases\Neumatico.cs" />
+    <Compile Include="Clases\Repuesto.cs" />
+    <Compile Include="Clases\VentaRepuestos.cs" />
+    <Compile Include="Clases\Vidrio.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Excepciones\RepuestoInvalidoException.cs" />
+    <Compile Include="Excepciones\SinRepuestosException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RepuestosABM.Libreria\RepuestosABM.Libreria.csproj">
-      <Project>{e6809aba-ba3c-46a7-a459-05eb29f0023f}</Project>
-      <Name>RepuestosABM.Libreria</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

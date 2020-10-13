@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepuestosABM.Consola", "RepuestosABM.Consola\RepuestosABM.Consola.csproj", "{E881A70A-005E-42BD-9D92-2F6575FDD658}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepuestosABM.Libreria", "RepuestosABM.Libreria\RepuestosABM.Libreria.csproj", "{E6809ABA-BA3C-46A7-A459-05EB29F0023F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E881A70A-005E-42BD-9D92-2F6575FDD658}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E881A70A-005E-42BD-9D92-2F6575FDD658}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E881A70A-005E-42BD-9D92-2F6575FDD658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6809ABA-BA3C-46A7-A459-05EB29F0023F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6809ABA-BA3C-46A7-A459-05EB29F0023F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6809ABA-BA3C-46A7-A459-05EB29F0023F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6809ABA-BA3C-46A7-A459-05EB29F0023F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
